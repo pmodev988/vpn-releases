@@ -1,17 +1,23 @@
 # PMO VPN for Windows
 
-[下载 Windows 0.4.4.0 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.4.0) · [全部版本](https://github.com/pmodev988/vpn-releases/releases)
+[下载 Windows 0.4.5.0 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.5.0) · [全部版本](https://github.com/pmodev988/vpn-releases/releases)
 
 ## 中文
 
-当前为0.4.4.0试运行自签名版，支持Windows 11 x64（22621及以上）。客户端直接输入邮箱、密码连接，不再打开浏览器。先退出托盘中的旧客户端，再运行新安装包。
+0.4.5.0 修复登录框输入被后台状态查询打断的问题。客户端直接输入邮箱和密码，不打开外部浏览器。
 
-OPS需配置账户、全隧道策略、ip额度和线路。代码测试和安装包校验通过不等于真实连接验收；实际安装、生产登录、隧道、撤权及20秒恢复仍待验收。自动升级关闭。附件含公开证书和SHA256SUMS，Windows可能显示自签发布者提示。
+旧客户端正在运行时也可启动新安装包，选择升级并确认。安装器会断开 VPN、恢复网络、关闭旧客户端，完成后重新打开；配置保留，需要自行点击连接。取消确认不执行升级。支持 Windows 11 x64（22621及以上）。
+
+当前为试运行自签名版，附公开证书及 SHA256SUMS。界面与安装故障测试通过；最终包实机升级、生产登录、隧道及恢复仍待验收。OPS 接入配置仍需完成。自动升级关闭。
 
 ## 日本語
 
-0.4.4.0はWindows 11 x64向け自己署名試用版です。クライアント内でメールアドレスとパスワードを入力し、外部ブラウザーは使用しません。旧クライアントを終了してからインストールしてください。OPSで接続設定が必要です。本番の実接続・復旧検証は未完了で、自動更新は無効です。公開証明書とチェックサムを同梱しています。
+0.4.5.0 はバックグラウンドの状態確認でログイン入力が中断される問題を修正します。メールアドレスとパスワードをクライアント内で入力します。
+
+実行中でも新しいインストーラーを起動できます。確認後、VPNを切断してネットワークを復元し、クライアントを終了・更新・再起動します。設定を保持し、自動接続はしません。Windows 11 x64対応の自己署名試用版です。実機更新と本番接続の検証は未完了です。自動更新は無効です。
 
 ## English
 
-0.4.4.0 is a self-signed trial for Windows 11 x64. Sign in with email/password directly in the client; no external browser. Exit the old client before installing. OPS provisioning is required. Real production login/tunnel and recovery acceptance remain pending; automatic updates are disabled. Public certificate and checksums are included.
+0.4.5.0 fixes login fields losing focus during background status polling. Enter email and password directly in the client.
+
+Run the new installer while the client is open. After confirmation it disconnects VPN, restores networking, closes the client, upgrades and reopens it. Settings are retained; reconnect manually. Cancelling leaves the installation unchanged. Self-signed trial for Windows 11 x64. UI and fault-injection tests passed; actual installation and production tunnel acceptance remain pending. OPS provisioning is required; automatic updates are disabled.
