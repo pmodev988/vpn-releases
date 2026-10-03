@@ -1,27 +1,17 @@
 # PMO VPN for Windows
 
-[下载 Windows 0.4.3.0 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.3.0) · [全部版本 · All releases · すべてのリリース](https://github.com/pmodev988/vpn-releases/releases)
+[下载 Windows 0.4.4.0 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.4.0) · [全部版本](https://github.com/pmodev988/vpn-releases/releases)
 
 ## 中文
 
-当前版本 **0.4.3.0，试运行自签名版**。本仓库提供 Windows 安装包、公开签名证书和 SHA-256 校验文件，支持 Windows 11 x64（内部版本 22621 或更新）。安装需要管理员权限。
+当前为0.4.4.0试运行自签名版，支持Windows 11 x64（22621及以上）。客户端直接输入邮箱、密码连接，不再打开浏览器。先退出托盘中的旧客户端，再运行新安装包。
 
-本版修复手动升级后，旧版本更新记录导致客户端在登录前显示“连接配置未就绪／安全校验失败”的问题。退出托盘中的旧客户端后运行新版安装包。
-
-内置签名接入配置，服务端继续使用已部署的 0.3.2。使用前仍需在 OPS 开通账户、策略和额度。新版安装后的真实登录、生产隧道、撤权及断网恢复尚待验收，自动升级关闭。Windows 可能提示未知发布者或 SmartScreen 警告，请核对摘要和证书指纹。
+OPS需配置账户、全隧道策略、ip额度和线路。代码测试和安装包校验通过不等于真实连接验收；实际安装、生产登录、隧道、撤权及20秒恢复仍待验收。自动升级关闭。附件含公开证书和SHA256SUMS，Windows可能显示自签发布者提示。
 
 ## 日本語
 
-**0.4.3.0 は自己署名付き試用版**です。Windows 11 x64、ビルド 22621 以降に対応し、管理者権限でインストールします。インストーラー、公開署名証明書、SHA-256 チェックサムを提供します。
-
-手動更新後に古い更新記録が残り、ログイン前に接続設定や安全性の検証エラーが出る問題を修正しました。タスクトレイから旧クライアントを終了してから、新しいインストーラーを実行してください。
-
-署名済み接続設定を同梱し、サーバーは配置済みの 0.3.2 を継続使用します。利用前に OPS でアカウント・ポリシー・利用枠の設定が必要です。更新後の実ログイン、本番トンネル、権限取消、切断からの復旧は未検証です。自動更新は無効です。Windows の警告が出る場合がありますので、ハッシュと証明書を確認してください。
+0.4.4.0はWindows 11 x64向け自己署名試用版です。クライアント内でメールアドレスとパスワードを入力し、外部ブラウザーは使用しません。旧クライアントを終了してからインストールしてください。OPSで接続設定が必要です。本番の実接続・復旧検証は未完了で、自動更新は無効です。公開証明書とチェックサムを同梱しています。
 
 ## English
 
-**0.4.3.0 is a self-signed trial release** for Windows 11 x64, build 22621 or later. Installation requires administrator approval. This repository provides the installer, public signing certificate and SHA-256 checksums.
-
-This version fixes stale update records preventing startup before login after a manual upgrade. Exit the old client from the system tray before running the new installer.
-
-Signed connection settings are embedded; deployed server version 0.3.2 is retained. Accounts, policies and budgets must be provisioned in OPS. Real login after installation, production tunnels, revocation and outage recovery remain unaccepted. Automatic upgrades are disabled. Windows may show warnings for the self-signed publisher; verify the hash and certificate.
+0.4.4.0 is a self-signed trial for Windows 11 x64. Sign in with email/password directly in the client; no external browser. Exit the old client before installing. OPS provisioning is required. Real production login/tunnel and recovery acceptance remain pending; automatic updates are disabled. Public certificate and checksums are included.
