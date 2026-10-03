@@ -1,27 +1,23 @@
 # PMO VPN for Windows
 
-[下载 Windows 安装包 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.1.0) · [全部版本 · All releases · すべてのリリース](https://github.com/pmodev988/vpn-releases/releases)
+[下载 Windows 0.4.2.0 · Download · ダウンロード](https://github.com/pmodev988/vpn-releases/releases/tag/v0.4.2.0) · [全部版本 · All releases · すべてのリリース](https://github.com/pmodev988/vpn-releases/releases)
 
 ## 中文
 
-本仓库提供 PMO VPN 的 Windows 安装包、SHA-256 校验文件和公开签名证书。
+当前版本 **0.4.2.0，试运行自签名版**。本仓库提供 Windows 安装包、公开签名证书和 SHA-256 校验文件，支持 Windows 11 x64（内部版本 22621 或更新）。安装需要管理员权限。
 
-当前版本为 **0.4.1.0 试运行自签名版**，支持 Windows 11 x64，系统内部版本 22621 或更新。下载页面列出使用说明、文件摘要和验收范围。Windows 可能提示未知发布者；请先核对摘要与签名证书指纹。
+本版内置签名接入配置；配套网关、登记及独立签发服务已部署。使用前仍需在 OPS 开通账户、策略和额度。真实客户端登录、生产隧道、撤权及断网恢复尚待验收，详情见发布说明。自动升级关闭。
 
-安装包可供下载，但生产登录、隧道连接及断网恢复仍待验收，需要管理员提供可用的接入配置。自动升级关闭。
+Windows 可能提示未知发布者或 SmartScreen 警告，请先核对摘要和证书指纹。
 
 ## 日本語
 
-PMO VPN の Windows インストーラー、SHA-256 チェックサム、公開署名証明書を配布しています。
+**0.4.2.0 は自己署名付き試用版**です。Windows 11 x64、ビルド 22621 以降に対応し、管理者権限でインストールします。インストーラー、公開署名証明書、SHA-256 チェックサムを提供します。
 
-現在の **0.4.1.0 は自己署名付き試用版**です。Windows 11 x64、ビルド 22621 以降に対応します。ダウンロード前にリリース説明と確認済みの範囲をご覧ください。Windows に不明な発行元と表示される場合があります。ファイルのハッシュと証明書の拇印を確認してください。
-
-本番ログイン、トンネル接続、通信断からの復旧は未検証です。管理者から有効な接続設定を取得してください。自動更新は無効です。
+署名済み接続設定を同梱し、関連するサーバーサービスは配置済みです。利用前に OPS でアカウント・ポリシー・利用枠を設定してください。実クライアントのログイン、トンネル、権限取消、切断からの復旧は未検証です。自動更新は無効です。Windows の警告が出る場合がありますので、ハッシュと証明書を確認してください。
 
 ## English
 
-This repository distributes PMO VPN Windows installers, SHA-256 checksums, and the public signing certificate.
+**0.4.2.0 is a self-signed trial release** for Windows 11 x64, build 22621 or later. Installation requires administrator approval. This repository provides the installer, public signing certificate and SHA-256 checksums.
 
-**0.4.1.0 is a self-signed trial release** for Windows 11 x64, build 22621 or later. Review the release notes and acceptance limits before use. Windows may display an unknown-publisher warning. Verify the file hash and signer thumbprint.
-
-Production login, tunnel connectivity, and outage recovery remain unaccepted. Obtain a working connection configuration from your administrator. Automatic upgrades remain disabled.
+Signed connection settings are embedded and the supporting services are deployed. Accounts, policies and budgets must still be provisioned in OPS. Real-client login, production tunnels, revocation and outage recovery remain unaccepted; see the release notes. Automatic upgrades are disabled. Windows may show security warnings for the self-signed publisher; verify the hash and certificate.
